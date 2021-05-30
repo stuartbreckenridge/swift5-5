@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		17F0AA9E2662393700084038 /* swift5_5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AA9D2662393700084038 /* swift5_5App.swift */; };
-		17F0AAA02662393700084038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AA9F2662393700084038 /* ContentView.swift */; };
+		17F0AAA02662393700084038 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AA9F2662393700084038 /* RootView.swift */; };
 		17F0AAA22662393900084038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F0AAA12662393900084038 /* Assets.xcassets */; };
 		17F0AAA52662393900084038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F0AAA42662393900084038 /* Preview Assets.xcassets */; };
+		17F0AAAD26623A9700084038 /* ArticleListAsyncAwaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AAAC26623A9700084038 /* ArticleListAsyncAwaitView.swift */; };
+		17F0AAAF26623B2E00084038 /* Feeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AAAE26623B2E00084038 /* Feeds.swift */; };
+		17F0AAB226623BB600084038 /* JSONFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AAB126623BB600084038 /* JSONFeedModel.swift */; };
+		17F0AAB526627CCD00084038 /* AsyncAwaitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AAB426627CCD00084038 /* AsyncAwaitModel.swift */; };
+		17F0AAB7266315DE00084038 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0AAB6266315DE00084038 /* AppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17F0AA9A2662393700084038 /* swift5-5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift5-5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F0AA9D2662393700084038 /* swift5_5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift5_5App.swift; sourceTree = "<group>"; };
-		17F0AA9F2662393700084038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17F0AA9F2662393700084038 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		17F0AAA12662393900084038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F0AAA42662393900084038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17F0AAA62662393900084038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F0AAAC26623A9700084038 /* ArticleListAsyncAwaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAsyncAwaitView.swift; sourceTree = "<group>"; };
+		17F0AAAE26623B2E00084038 /* Feeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeds.swift; sourceTree = "<group>"; };
+		17F0AAB126623BB600084038 /* JSONFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedModel.swift; sourceTree = "<group>"; };
+		17F0AAB426627CCD00084038 /* AsyncAwaitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitModel.swift; sourceTree = "<group>"; };
+		17F0AAB6266315DE00084038 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				17F0AA9D2662393700084038 /* swift5_5App.swift */,
-				17F0AA9F2662393700084038 /* ContentView.swift */,
+				17F0AAB026623B5900084038 /* Shared */,
+				17F0AAB826631A6B00084038 /* Root View */,
+				17F0AAB326627C9700084038 /* Async Await View */,
 				17F0AAA12662393900084038 /* Assets.xcassets */,
 				17F0AAA62662393900084038 /* Info.plist */,
 				17F0AAA32662393900084038 /* Preview Content */,
@@ -67,6 +79,41 @@
 				17F0AAA42662393900084038 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17F0AAB026623B5900084038 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				17F0AAB6266315DE00084038 /* AppModel.swift */,
+				17F0AAAE26623B2E00084038 /* Feeds.swift */,
+				17F0AABB26632A0C00084038 /* Data Model */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		17F0AAB326627C9700084038 /* Async Await View */ = {
+			isa = PBXGroup;
+			children = (
+				17F0AAAC26623A9700084038 /* ArticleListAsyncAwaitView.swift */,
+				17F0AAB426627CCD00084038 /* AsyncAwaitModel.swift */,
+			);
+			path = "Async Await View";
+			sourceTree = "<group>";
+		};
+		17F0AAB826631A6B00084038 /* Root View */ = {
+			isa = PBXGroup;
+			children = (
+				17F0AA9F2662393700084038 /* RootView.swift */,
+			);
+			path = "Root View";
+			sourceTree = "<group>";
+		};
+		17F0AABB26632A0C00084038 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				17F0AAB126623BB600084038 /* JSONFeedModel.swift */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F0AAA02662393700084038 /* ContentView.swift in Sources */,
+				17F0AAB7266315DE00084038 /* AppModel.swift in Sources */,
+				17F0AAA02662393700084038 /* RootView.swift in Sources */,
+				17F0AAAF26623B2E00084038 /* Feeds.swift in Sources */,
+				17F0AAAD26623A9700084038 /* ArticleListAsyncAwaitView.swift in Sources */,
+				17F0AAB526627CCD00084038 /* AsyncAwaitModel.swift in Sources */,
 				17F0AA9E2662393700084038 /* swift5_5App.swift in Sources */,
+				17F0AAB226623BB600084038 /* JSONFeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +253,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -disable-availability-checking -Xfrontend -enable-experimental-concurrency";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -255,6 +308,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -disable-availability-checking -Xfrontend -enable-experimental-concurrency";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -277,6 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -disable-availability-checking -Xfrontend -enable-experimental-concurrency";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stuartbreckenridge.swift5-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,6 +354,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -disable-availability-checking -Xfrontend -enable-experimental-concurrency";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stuartbreckenridge.swift5-5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
